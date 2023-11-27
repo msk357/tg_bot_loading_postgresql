@@ -1,0 +1,11 @@
+# Byte-compiled / optimized
+__pycache__/
+
+# Distribution / packaging
+venv
+infra/.env
+tg_bot/logs_tg_bot.log
+tgbot_loading_data_postgresql/.env
+tg_bot/test/.pytest_cache
+tg_bot/tests/.pytest_cache
+__init__.py
