@@ -45,11 +45,14 @@ def converts_columns_date(df, table_context: dict[str]):
 
 
 def converts_columns_address(df, table_context: dict[str]):
-    df[table_context['address_id'][0]] = df[table_context['address_id'][0]].map(
-        lambda x: x if x in CURRENT_PK_STR else 'нет адреса'
-    )  # если PK нет в списке CURRENT_PK_STR, значение заменяется на 'нет адреса'
-    df = df[df[table_context['address_id'][0]] != 'нет адреса']  # удаляются значения 'нет адреса'
-    return df
+    if df[table_context['address_id'][0]].dtypes in ['int', 'int64', 'float']:
+        raise ValueError('В колонке с адресом точки переданы данные формата int')
+    else:
+        df[table_context['address_id'][0]] = df[table_context['address_id'][0]].map(
+            lambda x: x if x in CURRENT_PK_STR else 'нет адреса'
+        )  # если PK нет в списке CURRENT_PK_STR, значение заменяется на 'нет адреса'
+        df = df[df[table_context['address_id'][0]] != 'нет адреса']  # удаляются значения 'нет адреса'
+        return df
 
 
 """Функция конвертирует колонки с данными типа процент"""
@@ -72,7 +75,7 @@ def converts_columns_percentages(df, table_context: dict[str]):
         raise ValueError(f'Проверьте столбцы с процентами в загружаемой таблице: \n {error}')
 
 
-"""Функция конвертирует колонки, где в качестве ращделителя используется ;"""
+"""Функция конвертирует колонки, где в качестве разделителя используется ;"""
 
 
 def converts_columns_separations(df, table_context: dict[str]):

@@ -9,3 +9,7 @@ tgbot_loading_data_postgresql/.env
 tg_bot/test/.pytest_cache
 tg_bot/tests/.pytest_cache
 __init__.py
+
+# Tests
+.coverage
+htmlcov
