@@ -8,13 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_convert_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg_bot/app_logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg_bot/bot_for_load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg_bot/connect_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg_bot/convert_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg_bot/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_convert_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_convert_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701094985883</updated>
       <workItem from="1701094988992" duration="570000" />
-      <workItem from="1701103657196" duration="1370000" />
+      <workItem from="1701103657196" duration="2479000" />
     </task>
     <servers />
   </component>
@@ -80,8 +74,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$.coverage" NAME=" Coverage Results" MODIFIED="1701105013323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$.coverage" NAME=" Coverage Results" MODIFIED="1701106054981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$1.coverage" NAME="1 Coverage Results" MODIFIED="1701104601269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$bot_for_load.coverage" NAME="bot_for_load Coverage Results" MODIFIED="1701105006260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
+    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$bot_for_load.coverage" NAME="bot_for_load Coverage Results" MODIFIED="1701105117980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
   </component>
 </project>

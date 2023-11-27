@@ -10,6 +10,7 @@ percent_to_int - колонки с процентами, приводятся к
 """
 import pandas as pd
 
+import tg_bot.app_logger
 from tg_bot.settings import (
     PATH_DIRECTORY,
     CURRENT_PK_INT,
@@ -30,11 +31,14 @@ from tg_bot.settings import (
 
 def converts_columns_date(df, table_context: dict[str]):
     # обработка полей с типом дата
-    for i in range(len(table_context['column_date'])):
-        time: str = table_context['column_date'][i]  # сохраняем название столбца в переменную
-        df[time] = df[time].replace('NULL', '')  # заменяем значения NULL
-        df[time] = pd.to_datetime(df[time]).dt.strftime('%Y-%m-%d')  # преобразуем дату в формат YY-MM-DD
-    return df
+    try:
+        for i in range(len(table_context['column_date'])):
+            time: str = table_context['column_date'][i]  # сохраняем название столбца в переменную
+            df[time] = df[time].replace('NULL', '')  # заменяем значения NULL
+            df[time] = pd.to_datetime(df[time]).dt.strftime('%Y-%m-%d')  # преобразуем дату в формат YY-MM-DD
+        return df
+    except Exception as error:
+        raise ValueError(f'Проверьте столбцы с датой в загружаемой таблице: \n {error}')
 
 
 """Функция конвертирует колонки с PK в формате str"""
@@ -53,16 +57,19 @@ def converts_columns_address(df, table_context: dict[str]):
 
 def converts_columns_percentages(df, table_context: dict[str]):
     # обработка полей с типом percent, приведение к типу numeric в БД
-    for i in range(len(table_context['percent_to_int'])):
-        # преобразуем процент в число за счёт замены % на '' и деления на 100
-        df[table_context['percent_to_int'][i]] = (
-            df[table_context['percent_to_int'][i]].map(
-                lambda x:
-                float(str(x).replace('%', '').replace(',', '.')) / 100
-                if pd.notnull(x) and x != '' and x != 'NULL' else x
+    try:
+        for i in range(len(table_context['percent_to_int'])):
+            # преобразуем процент в число за счёт замены % на '' и деления на 100
+            df[table_context['percent_to_int'][i]] = (
+                df[table_context['percent_to_int'][i]].map(
+                    lambda x:
+                    float(str(x).replace('%', '').replace(',', '.')) / 100
+                    if pd.notnull(x) and x != '' and x != 'NULL' else x
+                )
             )
-        )
-    return df
+        return df
+    except Exception as error:
+        raise ValueError(f'Проверьте столбцы с процентами в загружаемой таблице: \n {error}')
 
 
 """Функция конвертирует колонки, где в качестве ращделителя используется ;"""

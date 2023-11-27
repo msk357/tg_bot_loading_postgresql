@@ -95,7 +95,7 @@ def handle_file(update, context):
                 )
             except Exception as error:
                 update.message.reply_text(
-                    text=f'Ошибка при подготовке файла CSV:\n{str(error)}\n{traceback.format_exc()}'
+                    text=f'Ошибка при подготовке файла CSV:\n{str(error)}'
                 )
                 app_logger.logger.error(f'Ошибка при обработке файла:\n{str(error)}\n{traceback.format_exc()}')
 
