@@ -1,7 +1,12 @@
+import os
+import sys
 import unittest
 import pandas as pd
 
-from tg_bot.convert_csv import (
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'tg_bot')))
+
+from tg_bot.convert_csv  import (
     converts_columns_percentages,
     converts_columns_date,
     converts_columns_address
