@@ -25,7 +25,7 @@ class TestConvertCsv(unittest.TestCase):
 
     """Тест проверяет результат при передаче валидных данных"""
     def test_converts_columns_percentages(self):
-        df = pd.DataFrame(percent_to_int)
+        df = pd.DataFrame(percent_to_int_valid)
         table_context = {'percent_to_int': ['percent_to_int']}
         result_df = converts_columns_percentages(df, table_context)
         self.assertEqual(result_df['percent_to_int'][0], 0.5)
@@ -67,5 +67,5 @@ class TestConvertCsv(unittest.TestCase):
         self.assertEqual('В колонке с адресом точки переданы данные формата int', error.exception.args[0])
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     unittest.main()
