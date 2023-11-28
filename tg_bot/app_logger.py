@@ -9,7 +9,7 @@ from logging.handlers import RotatingFileHandler
 
 
 log_format = f'%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(lineno)s'
-path = '../'  # путь к директории для лог-файлов
+path = './'  # путь к директории для лог-файлов
 
 
 def logger_get(name):

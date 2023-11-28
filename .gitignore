@@ -7,6 +7,7 @@ infra/.env
 tg_bot/test/.pytest_cache
 tg_bot/tests/.pytest_cache
 logs_tg_bot.log
+.pytest_cache
 
 # Tests
 .coverage
