@@ -564,8 +564,8 @@ TABLES_LIST_DB: dict[str] = {
                         'address_id': [
                             'Ссылка.Склад'
                         ]
-                    }  # ok
                     }
+}
 
 CURRENT_PK_INT: list[int] = [
     1004153,
