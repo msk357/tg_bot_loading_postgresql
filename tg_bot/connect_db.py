@@ -3,16 +3,14 @@
 Укажите путь к файлу CSV и данные для подключения к DB в settings.py.
 Основная переменная TABLES_LIST_DB, в ней хранится вводная информация для работы с CSV и БД.
 """
-import csv
-import logging
 import psycopg2
 
-from settings import DATABASE, USER_DB, PASSWORD, HOST, PORT, TABLES_LIST_DB, PATH_DIRECTORY
+from settings import DATABASE, USER_DB, PASSWORD, HOST, PORT, TABLES_LIST_DB
 
 
 """
 Функция для загрузки данных в PostgreSQL из CSV-файла.
-Для загрузки данных создается временная таблица, из которой копируются данные в 
+Для загрузки данных создается временная таблица, из которой копируются данные в
 основную таблицу DB. В переменную conn необходимо внести данные DB для подключения.
 database - название DB,
 user - название пользователя (проверьте права пользователя в DB),

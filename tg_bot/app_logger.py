@@ -3,11 +3,10 @@
 Настроено обновление логов по размеру файла, атрибут maxBytes.
 Лог-файлы сохраняются в директории logs_tg_bot.
 """
-import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-log_format = f'%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(lineno)s'
+log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(lineno)s'
 
 
 def logger_get(name):

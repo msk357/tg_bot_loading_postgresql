@@ -10,7 +10,6 @@ percent_to_int - колонки с процентами, приводятся к
 """
 import pandas as pd
 
-import app_logger
 from settings import (
     CURRENT_PK_INT,
     CURRENT_PK_STR,
@@ -156,7 +155,7 @@ def convert_csv_data(name_table_for_load: str, table_context: dict[str]) -> None
             parse_dates=[*table_context['column_date']],
             dayfirst=True
         )
-        df = convert_column(df, table_context)
+        df = converts_columns(df, table_context)
         df_for_load = df[table_context['columns_name_csv']]
         df_for_load.to_csv(f'{PATH_DIRECTORY}{name_table_for_load}.csv', index=False, sep=';')
 
