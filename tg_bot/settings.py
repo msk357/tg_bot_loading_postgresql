@@ -10,7 +10,7 @@ from pathlib import Path
 
 load_dotenv()
 # указываем путь к файлу .env
-env_path = Path('..') / 'infra/.env'
+env_path = '/tg_bot_loading_postgresql_docker/infra_project/.env'
 load_dotenv(dotenv_path=env_path)
 
 # токен для ТГ-бота

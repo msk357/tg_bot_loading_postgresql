@@ -10,13 +10,13 @@ percent_to_int - колонки с процентами, приводятся к
 """
 import pandas as pd
 
-import tg_bot.app_logger
-from tg_bot.settings import (
-    PATH_DIRECTORY,
+import app_logger
+from settings import (
     CURRENT_PK_INT,
     CURRENT_PK_STR,
     COLUMNS_NAME_POSID_IN_CSV,
-    CSV_CONVERSION_FROM_UNPIVOT
+    CSV_CONVERSION_FROM_UNPIVOT,
+    PATH_DIRECTORY
 )
 
 

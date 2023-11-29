@@ -7,9 +7,7 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-
 log_format = f'%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(lineno)s'
-path = './'  # путь к директории для лог-файлов
 
 
 def logger_get(name):
@@ -18,7 +16,7 @@ def logger_get(name):
 
 
 file_handler = logging.handlers.RotatingFileHandler(
-    filename=os.path.join(path, 'logs_tg_bot.log'),
+    filename='logs_tg_bot.log',
     maxBytes=1000
 )
 file_handler.setLevel(logging.INFO)  # задаем уровень логгирования

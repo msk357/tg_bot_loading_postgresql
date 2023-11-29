@@ -3,10 +3,14 @@ __pycache__/
 
 # Distribution / packaging
 venv
-infra/.env
+infra_project/.env
 tg_bot/tests/.pytest_cache
 tg_bot/logs_tg_bot.log
+tg_bot/__init__.py
+logs_bot/logs_tg_bot.log
 logs_tg_bot.log
+tests/__init__.py
+tests/.pytest_cache
 .pytest_cache
 
 # Tests

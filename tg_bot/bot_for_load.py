@@ -12,11 +12,11 @@ import app_logger
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-from tg_bot.settings import TOKEN, PATH_DIRECTORY
+from settings import PATH_DIRECTORY, TOKEN
 from convert_csv import convert_csv_data
 from connect_db import load_csv_db, TABLES_LIST_DB
 
-
+PATH_DIRECTORY = PATH_DIRECTORY
 TOKEN: str = TOKEN
 
 # Настройка логирования, основная логика добавлена в модуле app_logger
@@ -107,16 +107,16 @@ def handle_file(update, context):
 
             except Exception as error:
                 update.message.reply_text(
-                    text=f'Ошибка при загрузке данных в базу данных:\n{str(error)}\n{traceback.format_exc()}'
+                    text=f'Ошибка при загрузке в базу данных:\n{str(error)}\n{traceback.format_exc()}'
                 )
-                app_logger.logger.error(f'Ошибка при загрузке данных в базу данных:'
+                app_logger.logger.error(f'Ошибка при загрузке в базу данных:'
                                         f'\n{str(error)}\n{traceback.format_exc()}')
 
     except Exception as error:
         update.message.reply_text(
-            text=f'Ошибка проверьте тип файла или название отчета.\n{str(error)}'
+            text=f'Ошибка - проверьте тип файла или название отчета.\n{str(error)}\n{traceback.format_exc()}'
         )
-        app_logger.logger.error(f'Ошибка проверьте тип файла или название отчета.\n{str(error)}')
+        app_logger.logger.error(f'Ошибка - проверьте тип файла или название отчета.\n{str(error)}')
 
 
 def main():
