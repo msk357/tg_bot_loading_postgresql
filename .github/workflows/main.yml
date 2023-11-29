@@ -5,7 +5,7 @@ on: [push]
 jobs:
   tests:
     # «Раннер» — создание изолированного окружения с последней версией Ubuntu
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     # Запуск actions checkout — готового скрипта
