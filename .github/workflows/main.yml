@@ -36,7 +36,7 @@ jobs:
         # запуск тестов pytest
         pytest tests/test*
     
-
+  # Сборка образа Docker и обновление репозитория на Docker Hub
   build_and_push_to_docker_hub:
     name: Push image to Docker Hub
     runs-on: ubuntu-20.04
@@ -52,6 +52,7 @@ jobs:
         # Запуск скрипта авторизации на Docker Hub
         uses: docker/login-action@v1
         with:
+          # Авторизация в docker hub
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
@@ -61,9 +62,11 @@ jobs:
           push: true
           tags: mmsk357/tg-bot:latest
 
+  # Обновление образа в Docker Hub на сервере и запуск бота
   deploy:
     name: deploy bot in server
     runs-on: ubuntu-20.04
+    # Подключение к серверу через ssh
     needs: build_and_push_to_docker_hub
     steps:
       - name: executing remote ssh commands to deploy
@@ -78,4 +81,5 @@ jobs:
               sudo docker pull mmsk357/tg-bot
               #остановка всех контейнеров
               sudo docker stop $(sudo docker ps -a -q)
+              # Файл .env сохранен на сервере, команда копирует данные в docker образ
               sudo docker run -v /home/msk357/.env:/tg_bot_loading_postgresql_docker/infra_project/.env --rm -d mmsk357/tg-bot

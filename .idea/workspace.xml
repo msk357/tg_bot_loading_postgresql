@@ -8,7 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/infra_project/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/msk357/PycharmProjects/tg_bot_loading_postgresql/infra",
+    "last_opened_file_path": "/Users/msk357/PycharmProjects/tg_bot_loading_postgresql/infra_project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infra_project" />
       <recent name="$PROJECT_DIR$/infra" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,7 +83,7 @@
       <workItem from="1701103657196" duration="10640000" />
       <workItem from="1701166642688" duration="794000" />
       <workItem from="1701168179279" duration="29112000" />
-      <workItem from="1701433962965" duration="5835000" />
+      <workItem from="1701433962965" duration="9494000" />
     </task>
     <servers />
   </component>

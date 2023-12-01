@@ -10,10 +10,10 @@ RUN mkdir /tg_bot_loading_postgresql_docker/infra_project
 RUN mkdir /tg_bot_loading_postgresql_docker/csv
 WORKDIR tg_bot_loading_postgresql_docker
 # Копируем файл requirements
-COPY requirements.txt .
+COPY ../requirements.txt .
 # Устанавливаем пакеты, необходимые для работы
 RUN pip install -r ./requirements.txt --no-cache-dir
 # Копируем модули бота в рабочую директорию
-COPY tg_bot ./tg_bot
+COPY ../tg_bot ./tg_bot
 # Запускаем ТГ-бот
 CMD ["python3", "tg_bot/bot_for_load.py"]
