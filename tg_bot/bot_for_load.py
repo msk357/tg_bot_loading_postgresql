@@ -17,7 +17,7 @@ from convert_csv import convert_csv_data
 from connect_db import load_csv_db, TABLES_LIST_DB
 
 PATH_DIRECTORY = PATH_DIRECTORY
-TOKEN: str = '6593060174:AAGnt0f4XL7fTFkpG3EYeXjDyKskBng-mAU'
+TOKEN: str = TOKEN
 
 # Настройка логирования, основная логика добавлена в модуле app_logger
 logger = app_logger.logger_get(__name__)

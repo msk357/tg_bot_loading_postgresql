@@ -1,19 +1,20 @@
 name: Tg-bot workflow
-
+# workflow запускается после пуша в ветку
 on: [push]
 
 jobs:
   tests:
-    # «Раннер» — создание изолированного окружения с последней версией Ubuntu
+    # «Раннер» — создание изолированного окружения с версией Ubuntu 20.04
+    # на других версия может возникать ошибка в установке Python 3.9.6
     runs-on: ubuntu-20.04
 
     steps:
-    # Запуск actions checkout — готового скрипта
+    # Запуск actions checkout — готовый скрипт
     # для клонирования репозитория
     - uses: actions/checkout@v2
     - name: Set up Python
-      # Запуск actions setup-python — готового скрипта
-      # для развёртывания окружения Python
+      # Запуск actions setup-python — готовый скрипт
+      # для развертывания окружения Python
       uses: actions/setup-python@v2
       with:
         # Выбор версии Python
@@ -23,15 +24,16 @@ jobs:
       run: | 
         # обновление pip
         python -m pip install --upgrade pip 
-        # установка flake8 и его плагинов
+        # установка flake8
         pip install flake8
         # установка зависимостей
         pip install -r requirements.txt 
 
     - name: Test with flake8
       run: |
-        # запуск проверки проекта по flake8
+        # запуск проверки по flake8
         python -m flake8
+        # запуск тестов pytest
         pytest tests/test*
     
 
@@ -76,4 +78,4 @@ jobs:
               sudo docker pull mmsk357/tg-bot
               #остановка всех контейнеров
               sudo docker stop $(sudo docker ps -a -q)
-              sudo docker run --rm -d mmsk357/tg-bot
+              sudo docker run -v /home/msk357/.env:/tg_bot_loading_postgresql_docker/infra_project/.env --rm -d mmsk357/tg-bot
