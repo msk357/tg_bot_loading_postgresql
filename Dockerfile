@@ -12,6 +12,6 @@ COPY requirements.txt .
 RUN pip install -r ./requirements.txt --no-cache-dir
 # Копируем модули бота в рабочую директорию
 COPY tg_bot ./tg_bot
-COPY infra_project/.env ./infra_project
+COPY infra_project/.env tg_bot_loading_postgresql_docker/infra_project
 # Запускаем ТГ-бот
 CMD ["python3", "tg_bot/bot_for_load.py"]
