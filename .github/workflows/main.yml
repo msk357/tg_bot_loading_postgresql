@@ -77,3 +77,4 @@ jobs:
               #остановка всех контейнеров
               sudo docker stop $(sudo docker ps -a -q)
               sudo docker run --rm -d
+
