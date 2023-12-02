@@ -39,7 +39,7 @@ table_id - название PK в обновляемой таблице DB ти�
 address_id - название PK в обновляемой таблице DB типа str.
 """
 TABLES_LIST_DB: dict[str] = {
-                    'teko': {
+                    'services': {
                         'column_date': [
                             'Время'
                         ],
@@ -56,12 +56,12 @@ TABLES_LIST_DB: dict[str] = {
                             'Сумма в валюте получения'
                         ],
                         'columns_name_db': [
-                            'datesale',
-                            'teko_id',
+                            'datesale_teko',
+                            'service_id',
                             'product',
                             'product_name',
                             'posid',
-                            'sumsale'
+                            'sumsale_service'
                         ],
                         'table_id': [
                             'teko_id'
@@ -94,20 +94,6 @@ TABLES_LIST_DB: dict[str] = {
                         ],
                         'table_id': [
                             'posid'
-                        ]
-                    },  # ok
-                    'teko_category': {
-                        'columns_name_csv': [
-                            'Товар',
-                            'наименование номенклатуры',
-                            'категория'
-                        ],
-                        'columns_name_db': [
-                            'teko_id',
-                            'category_id'
-                        ],
-                        'table_id': [
-                            'teko_id'
                         ]
                     },  # ok
                     'targets': {
@@ -202,7 +188,7 @@ TABLES_LIST_DB: dict[str] = {
                         ],
                         'columns_name_db': [
                             'number',
-                            'datesale',
+                            'activation_date',
                             'activations_id',
                             'tariff',
                             'posid',
@@ -305,7 +291,7 @@ TABLES_LIST_DB: dict[str] = {
                             'orderid'
                         ]
                     },  # ok
-                    'crediting': {
+                    'credits': {
                         'column_date': [
                             'Время отправки заявки на рассмотрение'
                         ],
@@ -333,7 +319,7 @@ TABLES_LIST_DB: dict[str] = {
                             'Тип оформления заявки'
                         ],
                         'columns_name_db': [
-                            'crediting_id',
+                            'credit_id',
                             'posid',
                             'login',
                             'name_client',
@@ -354,7 +340,7 @@ TABLES_LIST_DB: dict[str] = {
                             'Акции по всем банкам'
                         ]
                     },  # ok
-                    'vmr': {
+                    'monitorings': {
                         'column_date': [
                             'date_report',
                             'Комментарий: Дата консультации'
@@ -393,13 +379,13 @@ TABLES_LIST_DB: dict[str] = {
                             'rtk',
                             'pay',
                             'total',
-                            'vmr_id'
+                            'monitoring_id'
                         ],
                         'table_id': [
                             'vmr_id'
                         ]
                     },  # ok
-                    'traffic': {
+                    'traffics': {
                         'column_date': [
                         ],
                         'column_int': [
@@ -420,7 +406,7 @@ TABLES_LIST_DB: dict[str] = {
                             'posid'
                         ]
                     },  # ok
-                    'mnp_successful': {
+                    'mnp_successfuls': {
                         'column_date': [
                             'DATE'
                         ],
@@ -464,7 +450,7 @@ TABLES_LIST_DB: dict[str] = {
                             'applications_date'
                         ]
                     },  # ok
-                    'photo_report': {
+                    'photo_reports': {
                         'column_date': [
                             'date_report'
                         ],

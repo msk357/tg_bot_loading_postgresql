@@ -77,9 +77,11 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-              # Выполняет pull образа с DockerHub
+              # Переходим в директорию
+              cd tg_bot
+              # Выполняем pull образа с DockerHub
               sudo docker pull mmsk357/tg-bot
               #остановка всех контейнеров
               sudo docker stop $(sudo docker ps -a -q)
-              # Файл .env сохранен на сервере, команда копирует данные в docker образ
+              # Файл .env сохранен на сервере, команда копирует данные в docker образ и запускает его
               sudo docker run -v /home/msk357/.env:/tg_bot_loading_postgresql_docker/infra_project/.env --rm -d mmsk357/tg-bot
