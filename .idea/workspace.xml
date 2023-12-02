@@ -8,7 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infra_project/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <workItem from="1701166642688" duration="794000" />
       <workItem from="1701168179279" duration="29112000" />
       <workItem from="1701433962965" duration="18272000" />
-      <workItem from="1701543308646" duration="805000" />
+      <workItem from="1701543308646" duration="1079000" />
     </task>
     <servers />
   </component>
