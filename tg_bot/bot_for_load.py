@@ -119,6 +119,13 @@ def handle_file(update, context):
         app_logger.logger.error(f'Ошибка - проверьте тип файла или название отчета.\n{str(error)}')
 
 
+"""
+Основная логика модуля, функция инициирует запуск бота.
+В качестве основного аремента функция принимает токен для запуска бота.
+В add_handlers регистрируются команды-обработчики.
+"""
+
+
 def main():
     bot = telegram.Bot(token=TOKEN)
     updater = Updater(bot=bot, use_context=True)
