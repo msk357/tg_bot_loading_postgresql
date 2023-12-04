@@ -9,8 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra_project/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/bot_for_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/bot_for_load.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,9 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="infra_project/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
@@ -109,7 +109,8 @@
       <workItem from="1701166642688" duration="794000" />
       <workItem from="1701168179279" duration="29112000" />
       <workItem from="1701433962965" duration="18272000" />
-      <workItem from="1701543308646" duration="2170000" />
+      <workItem from="1701543308646" duration="2567000" />
+      <workItem from="1701711661494" duration="277000" />
     </task>
     <servers />
   </component>
