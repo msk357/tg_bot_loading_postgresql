@@ -109,8 +109,7 @@
       <workItem from="1701433962965" duration="18272000" />
       <workItem from="1701543308646" duration="2567000" />
       <workItem from="1701711661494" duration="277000" />
-      <workItem from="1701712025843" duration="1535000" />
-      <workItem from="1702306712767" duration="1073000" />
+      <workItem from="1701712025843" duration="538000" />
     </task>
     <servers />
   </component>
@@ -118,7 +117,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$.coverage" NAME=" Coverage Results" MODIFIED="1702307683635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$.coverage" NAME=" Coverage Results" MODIFIED="1701166650125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$1.coverage" NAME="1 Coverage Results" MODIFIED="1701104601269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$app_logger.coverage" NAME="app_logger Coverage Results" MODIFIED="1701199313237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$pytest_in_test_convert_csv_py.coverage" NAME="pytest in test_convert_csv.py Coverage Results" MODIFIED="1701195557288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
