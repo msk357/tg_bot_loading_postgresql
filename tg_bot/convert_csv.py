@@ -9,6 +9,7 @@ percent_to_int - колонки с процентами, приводятся к
 Ожидаемый ввод - датафрейм и переменная context с словарем.
 """
 import pandas as pd
+import re
 
 from settings import (
     CURRENT_PK_INT,
@@ -92,6 +93,7 @@ def converts_columns_separations(df, table_context: dict[str]):
 
 def converts_columns_int(df, table_context: dict[str]):
     for i in range(len(table_context['column_int'])):
+        # проверка на поле типа pos_id
         if table_context['column_int'][i] in COLUMNS_NAME_POSID_IN_CSV:
             df[table_context['column_int'][i]] = (
                 df[table_context['column_int'][i]].
@@ -107,6 +109,7 @@ def converts_columns_int(df, table_context: dict[str]):
                 map(lambda x: int(str(x).replace(',', '.').
                                   split('.')[0]) if pd.notnull(x) and x != 'NULL' else None)
             )  # преобразуем значение в str, заменяем , на . и сохраняем только целое значение
+
     return df
 
 

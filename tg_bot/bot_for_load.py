@@ -111,6 +111,11 @@ def handle_file(update, context):
                 )
                 app_logger.logger.error(f'Ошибка при загрузке в базу данных:'
                                         f'\n{str(error)}\n{traceback.format_exc()}')
+        else:
+            update.message.reply_text(
+                text=f'Ошибка - названия таблицы нет в БД или формат файла не соотвествует CSV.'
+            )
+            app_logger.logger.error(f'Ошибка - названия таблицы нет в БД или формат файла не соотвествует CSV.')
 
     except Exception as error:
         update.message.reply_text(

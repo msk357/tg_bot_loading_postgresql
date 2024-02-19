@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # указываем путь к файлу .env
-env_path = '/tg_bot_loading_postgresql_docker/infra_project/.env'
+env_path = '../infra_project/.env'
 load_dotenv(dotenv_path=env_path)
 
 # токен для ТГ-бота
@@ -103,20 +103,10 @@ TABLES_LIST_DB: dict[str] = {
                         'column_int': [
                             'PosID',
                             'gi',
-                            'upsale',
-                            'insurance',
-                            'eset',
-                            'wink',
-                            'promo',
-                            'rtk',
-                            'rtk_day',
-                            'smartphones',
-                            'fo_rtk',
-                            'credit_lid'
+                            'rtk'
                         ],
                         'percent_to_int': [
                             'mnp',
-                            'credit',
                             'rtk_cr',
                             'vmr'
                         ],
@@ -124,21 +114,11 @@ TABLES_LIST_DB: dict[str] = {
                             'target_id',
                             'PosID',
                             'gi',
-                            'focus_tariffs',
+                            'focus_tariff',
                             'mnp',
-                            'upsale',
-                            'insurance',
-                            'eset',
-                            'wink',
-                            'promo',
                             'rtk',
                             'rtk_lid',
                             'rtk_cr',
-                            'rtk_day',
-                            'smartphones',
-                            'fo_rtk',
-                            'credit',
-                            'credit_lid',
                             'vmr',
                             'reporting_period'
                         ],
@@ -146,21 +126,11 @@ TABLES_LIST_DB: dict[str] = {
                             'target_id',
                             'posid',
                             'gi',
-                            'focus_tariffs',
+                            'focus_tariff',
                             'mnp',
-                            'upsale',
-                            'insurance',
-                            'eset',
-                            'wink',
-                            'promo',
                             'rtk',
                             'rtk_lid',
                             'rtk_cr',
-                            'rtk_day',
-                            'smartphones',
-                            'fo_rtk',
-                            'credit',
-                            'credit_lid',
                             'vmr',
                             'reporting_period'
                         ],
@@ -173,7 +143,6 @@ TABLES_LIST_DB: dict[str] = {
                             'ACTIVATION_DATE'
                         ],
                         'column_int': [
-                            'FIRST_PAY',
                             'POS_ID'
                         ],
                         'columns_name_csv': [
@@ -340,7 +309,7 @@ TABLES_LIST_DB: dict[str] = {
                             'Акции по всем банкам'
                         ]
                     },  # ok
-                    'monitorings': {
+                    'vmr': {
                         'column_date': [
                             'date_report',
                             'Комментарий: Дата консультации'
@@ -379,7 +348,7 @@ TABLES_LIST_DB: dict[str] = {
                             'rtk',
                             'pay',
                             'total',
-                            'monitoring_id'
+                            'vmr_id'
                         ],
                         'table_id': [
                             'vmr_id'
