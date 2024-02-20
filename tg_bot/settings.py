@@ -17,13 +17,13 @@ TOKEN = "6593060174:AAGnt0f4XL7fTFkpG3EYeXjDyKskBng-mAU"
 
 # переменные для подключения к DB
 DATABASE = "postgres"
-PASSWORD = 2367
+PASSWORD = "2367"
 USER_DB = "postgres"
 HOST = "51.250.23.244"
-PORT = 5432
+PORT = "5432"
 
 # путь к файлу CSV
-PATH_DIRECTORY = "/Users/msk357/Desktop/load/"
+PATH_DIRECTORY = "/tg_bot_loading_postgresql_docker/csv/"
 
 
 """
