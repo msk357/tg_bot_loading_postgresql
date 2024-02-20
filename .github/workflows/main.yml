@@ -27,8 +27,7 @@ jobs:
         # установка flake8
         pip install flake8
         # установка зависимостей
-        pip install -r requirements.txt 
-
+        pip install -r requirements.txt
    # - name: Test with flake8
     #  run: |
         # запуск проверки по flake8

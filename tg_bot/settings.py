@@ -206,7 +206,9 @@ TABLES_LIST_DB: dict[str] = {
                         'column_int': [
                             'pos_id'
                         ],
-                        'percent_to_int': [],
+                        'percent_to_int': [
+
+                        ],
                         'columns_name_csv': [
                             'date_order',
                             'orderid',
