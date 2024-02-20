@@ -218,7 +218,7 @@ TABLES_LIST_DB: dict[str] = {
                             'date_status'
                         ],
                         'columns_name_db': [
-                            'datesale',
+                            'date_activation',
                             'orderid',
                             'posid',
                             'number',
