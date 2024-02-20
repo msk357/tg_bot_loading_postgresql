@@ -13,17 +13,17 @@ env_path = '../infra_project/.env'
 load_dotenv(dotenv_path=env_path)
 
 # токен для ТГ-бота
-TOKEN = os.getenv("TOKEN")
+TOKEN = "6593060174:AAGnt0f4XL7fTFkpG3EYeXjDyKskBng-mAU"
 
 # переменные для подключения к DB
-DATABASE = os.getenv("DATABASE")
-PASSWORD = os.getenv("PASSWORD")
-USER_DB = os.getenv("USER_DB")
-HOST = os.getenv("HOST")
-PORT = os.getenv("PORT")
+DATABASE = "postgres"
+PASSWORD = 2367
+USER_DB = "postgres"
+HOST = "51.250.23.244"
+PORT = 5432
 
 # путь к файлу CSV
-PATH_DIRECTORY = os.getenv("PATH_DIRECTORY")
+PATH_DIRECTORY = "/Users/msk357/Desktop/load/"
 
 
 """
