@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1174</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1215</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
       <StartupTime>1705865104</StartupTime>
       <TimeZones>true ACDT
@@ -1401,7 +1401,7 @@ false posixrules
 13395||10|C|G
 13395||-9223372036854775808|U|G
 13395||10|U|G</Grants>
-      <IntrospectionStateNumber>1174</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1215</IntrospectionStateNumber>
       <ObjectId>13761</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4826,9 +4826,9 @@ false posixrules
     <schema id="261" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1174</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-02-18.18:15:36.119</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-02-18.15:15:36</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>1215</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-02-20.10:20:03.204</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-02-20.07:20:04</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>526</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5286,11 +5286,11 @@ false posixrules
       <StateNumber>759</StateNumber>
       <UnderlyingIndexId>16508</UnderlyingIndexId>
     </key>
-    <column id="327" parent="267" name="datesale">
+    <column id="327" parent="267" name="date_activation">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>762</StateNumber>
+      <StateNumber>1214</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="328" parent="267" name="orderid">
