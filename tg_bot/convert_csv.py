@@ -142,7 +142,7 @@ def converts_columns(df, table_context: dict[str]):
 
 
 def convert_csv_data(name_table_for_load: str, table_context: dict[str]) -> None:
-    # ветвление для преобразования из сводной таблицы CSV в строковый формат
+    # ветвление для преобразования из сводной таблицы CSV в обычный формат
     if name_table_for_load in CSV_CONVERSION_FROM_UNPIVOT:
         df_unpivot = pd.read_csv(
             f'{PATH_DIRECTORY}{name_table_for_load}.csv',
