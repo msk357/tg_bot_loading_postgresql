@@ -736,6 +736,6 @@ COLUMNS_NAME_POSID_IN_CSV: list[str] = [
 ]  # название колонки с posid в csv
 CSV_CONVERSION_FROM_UNPIVOT: list[str] = [
     'mnp_successful',
-    'traffic',
+    'traffics',
     'mnp_applications'
 ]  # название таблиц CSV формата pivot, для обработки в unpivot формат
