@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1281</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1306</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
       <StartupTime>1705865104</StartupTime>
       <TimeZones>true ACDT
@@ -1401,24 +1401,24 @@ false posixrules
 13395||10|C|G
 13395||-9223372036854775808|U|G
 13395||10|U|G</Grants>
-      <IntrospectionStateNumber>1281</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1306</IntrospectionStateNumber>
       <ObjectId>13761</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
     <role id="3" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="4" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="4" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_monitor">
+    <role id="5" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
-    </role>
-    <role id="6" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
     </role>
     <role id="7" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
@@ -1426,20 +1426,20 @@ false posixrules
     <role id="8" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="10" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_stat_scan_tables">
+    <role id="9" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
+    <role id="10" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_write_server_files">
+    <role id="11" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
     </role>
     <role id="14" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
@@ -4826,9 +4826,9 @@ false posixrules
     <schema id="261" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1281</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-02-22.22:00:14.294</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-02-22.19:00:15</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>1306</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-02-23.19:41:19.197</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-02-23.16:41:19</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>526</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4914,8 +4914,8 @@ false posixrules
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="275" parent="261" name="traffics">
-      <ObjectId>17753</ObjectId>
-      <StateNumber>1276</StateNumber>
+      <ObjectId>17816</ObjectId>
+      <StateNumber>1305</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -5849,55 +5849,52 @@ category_id</ColNames>
     </key>
     <check id="404" parent="275" name="positive_traffic">
       <ColNames>traffic</ColNames>
-      <ObjectId>17756</ObjectId>
+      <ObjectId>17819</ObjectId>
       <Predicate>(traffic &gt;= (0)::numeric) AND (traffic &lt; (10000)::numeric)</Predicate>
-      <StateNumber>1276</StateNumber>
+      <StateNumber>1305</StateNumber>
     </check>
     <column id="405" parent="275" name="posid">
       <DasType>integer|0s</DasType>
-      <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1276</StateNumber>
+      <StateNumber>1305</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="406" parent="275" name="traffic_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1276</StateNumber>
+      <StateNumber>1305</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="407" parent="275" name="traffic">
       <DasType>numeric|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>1276</StateNumber>
+      <StateNumber>1305</StateNumber>
       <TypeId>1700</TypeId>
     </column>
     <foreign-key id="408" parent="275" name="traffics_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>17761</ObjectId>
-      <StateNumber>1276</StateNumber>
+      <ObjectId>17824</ObjectId>
+      <StateNumber>1305</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="409" parent="275" name="traffics_pkey">
-      <ColNames>traffic_date
-posid</ColNames>
+    <index id="409" parent="275" name="traffics_posid_traffic_date_key">
+      <ColNames>posid
+traffic_date</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>17759</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1276</StateNumber>
+      <ObjectId>17822</ObjectId>
+      <StateNumber>1305</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="410" parent="275" name="traffics_pkey">
+    <key id="410" parent="275" name="traffics_posid_traffic_date_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>17760</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1276</StateNumber>
-      <UnderlyingIndexId>17759</UnderlyingIndexId>
+      <ObjectId>17823</ObjectId>
+      <StateNumber>1305</StateNumber>
+      <UnderlyingIndexId>17822</UnderlyingIndexId>
     </key>
     <column id="411" parent="276" name="posid">
       <DasType>integer|0s</DasType>
