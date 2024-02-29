@@ -23,7 +23,7 @@ HOST = "51.250.23.244"
 PORT = "5432"
 
 # путь к файлу CSV
-PATH_DIRECTORY = "/tg_bot_loading_postgresql_docker/csv/"
+PATH_DIRECTORY = "/Users/msk357/Desktop/load/"
 # "/tg_bot_loading_postgresql_docker/csv/"
 
 

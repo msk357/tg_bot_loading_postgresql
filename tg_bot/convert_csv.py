@@ -168,9 +168,9 @@ def convert_csv_data(name_table_for_load: str, table_context: dict[str]) -> None
             f'{PATH_DIRECTORY}{name_table_for_load}.csv',
             delimiter=';',
             parse_dates=[*table_context['column_date']],
-            dayfirst=True
+            dayfirst=True,
+            skiprows=[0, 1]
         )
-        df = df.drop([0, 1])
         df = df.fillna('NULL')  # заменяем пустые ячейки на null
         df = converts_columns(df, table_context)
         df_for_load = df[table_context['columns_name_csv']]
@@ -198,7 +198,6 @@ def convert_csv_data(name_table_for_load: str, table_context: dict[str]) -> None
         )
         df = df.fillna('NULL')
         df = converts_columns(df, table_context)
-
         df_for_load = df[table_context['columns_name_csv']]
         df_for_load.to_csv(f'{PATH_DIRECTORY}{name_table_for_load}.csv', index=False, sep=';')
 
