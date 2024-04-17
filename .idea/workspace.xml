@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="" />
+    <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +78,7 @@
       <recent name="$PROJECT_DIR$/infra" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Database Script.console.sql">
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/8730a1db-5d77-427a-bc39-c27624ac78d7/console.sql" />
       <script-mode>FILE</script-mode>
@@ -128,7 +132,11 @@
       <workItem from="1707239187958" duration="44000" />
       <workItem from="1708258476595" duration="25448000" />
       <workItem from="1709062240322" duration="427000" />
-      <workItem from="1709108212469" duration="2259000" />
+      <workItem from="1709108212469" duration="2544000" />
+      <workItem from="1709295064744" duration="981000" />
+      <workItem from="1711015421252" duration="4778000" />
+      <workItem from="1712048279352" duration="5278000" />
+      <workItem from="1713351350894" duration="1437000" />
     </task>
     <servers />
   </component>
