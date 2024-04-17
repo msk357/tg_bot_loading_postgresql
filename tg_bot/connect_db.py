@@ -47,15 +47,27 @@ def load_csv_db(path_directory: str, name_table_db: str) -> None:
         next(f)
         cur.copy_from(f, f'{name_temp_table}', sep=';', null='NULL')
 
-    # Загрузка только уникальных записей из временной таблицы в основную таблицу
-    insert_unique_query: str = (f"INSERT INTO {name_table_db} ({columns_load_str}) "
-                                f"SELECT {columns_load_str} "
-                                f"FROM {name_temp_table} "
-                                f"WHERE NOT EXISTS "
-                                f"(SELECT 1 FROM {name_table_db} "
-                                f"WHERE {name_table_db}.{id_load} = {name_temp_table}.{id_load})")
+    # Ветвление для загрузки данных в таблицах без PK
+    if name_table_db == 'traffics':
+        insert_unique_query: str = (f"INSERT INTO {name_table_db} ({columns_load_str}) "
+                                    f"SELECT {columns_load_str} "
+                                    f"FROM {name_temp_table} ")
+        cur.execute(insert_unique_query)
+        conn.commit()
+        conn.close()
+        return
 
-    cur.execute(insert_unique_query)
-    conn.commit()
-    conn.close()
-    return
+    # Ветвление для загрузки данных в таблицах c PK
+    else:
+        # Загрузка только уникальных записей из временной таблицы в основную таблицу
+        insert_unique_query: str = (f"INSERT INTO {name_table_db} ({columns_load_str}) "
+                                    f"SELECT {columns_load_str} "
+                                    f"FROM {name_temp_table} "
+                                    f"WHERE NOT EXISTS "
+                                    f"(SELECT 1 FROM {name_table_db} "
+                                    f"WHERE {name_table_db}.{id_load} = {name_temp_table}.{id_load})")
+
+        cur.execute(insert_unique_query)
+        conn.commit()
+        conn.close()
+        return

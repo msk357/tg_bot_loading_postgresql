@@ -360,10 +360,10 @@ TABLES_LIST_DB: dict[str] = {
                     },  # ok
                     'traffics': {
                         'column_date': [
+                            'DATE'
                         ],
                         'column_int': [
-                            'Код ТТ',
-                            'VALUE'
+                            'Код ТТ'
                         ],
                         'columns_name_csv': [
                             'Код ТТ',
