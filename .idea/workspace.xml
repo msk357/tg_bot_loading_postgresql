@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/connect_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/connect_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
       <workItem from="1709295064744" duration="981000" />
       <workItem from="1711015421252" duration="4778000" />
       <workItem from="1712048279352" duration="5278000" />
-      <workItem from="1713351350894" duration="3786000" />
+      <workItem from="1713351350894" duration="8422000" />
     </task>
     <servers />
   </component>
@@ -162,7 +160,7 @@
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$app_logger.coverage" NAME="app_logger Coverage Results" MODIFIED="1701199313237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$pytest_in_test_convert_csv_py.coverage" NAME="pytest in test_convert_csv.py Coverage Results" MODIFIED="1701195557288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$convert_csv.coverage" NAME="convert_csv Coverage Results" MODIFIED="1701193307378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
-    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$bot_for_load.coverage" NAME="bot_for_load Coverage Results" MODIFIED="1713358333405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
+    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$bot_for_load.coverage" NAME="bot_for_load Coverage Results" MODIFIED="1713360042540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$test.coverage" NAME="test Coverage Results" MODIFIED="1701190685804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$settings.coverage" NAME="settings Coverage Results" MODIFIED="1708270433925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
   </component>
