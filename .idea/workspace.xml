@@ -8,7 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg_bot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +148,7 @@
       <workItem from="1713351350894" duration="8422000" />
       <workItem from="1715764452614" duration="298000" />
       <workItem from="1715861871079" duration="4564000" />
-      <workItem from="1716298543529" duration="3897000" />
+      <workItem from="1716298543529" duration="4346000" />
     </task>
     <servers />
   </component>
@@ -157,7 +160,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tg_bot/settings.py</url>
-          <line>316</line>
+          <line>324</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
