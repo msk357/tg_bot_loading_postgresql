@@ -69,6 +69,19 @@ TABLES_LIST_DB: dict[str] = {
                             'teko_id'
                         ]
                     },  # ok
+                    'activations_sellers': {
+                        'columns_name_csv': [
+                            'employee',
+                            'activations_id'
+                        ],
+                        'columns_name_db': [
+                            'employee',
+                            'activations_id'
+                        ],
+                        'table_id': [
+                            'activations_id'
+                        ]
+                    },
                     'activations_office': {
                         'columns_name_csv': [
                             'ICC'

@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>2059</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2079</IntrospectionStateNumber>
       <ServerVersion>14.11</ServerVersion>
       <StartupTime>1710936753</StartupTime>
       <TimeZones>true ACDT
@@ -1401,7 +1401,7 @@ true posixrules
 13395||10|C|G
 13395||-9223372036854775808|U|G
 13395||10|U|G</Grants>
-      <IntrospectionStateNumber>2059</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2079</IntrospectionStateNumber>
       <ObjectId>13761</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4826,8 +4826,8 @@ true posixrules
     <schema id="261" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>2059</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-05-23.11:50:03</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>2079</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-05-23.15:49:39</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>526</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4852,150 +4852,156 @@ true posixrules
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="265" parent="261" name="activationss">
+    <table id="265" parent="261" name="activations_sellers">
+      <ObjectId>19449</ObjectId>
+      <StateNumber>2078</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="266" parent="261" name="activationss">
       <ObjectId>17183</ObjectId>
       <StateNumber>1034</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="266" parent="261" name="categories">
+    <table id="267" parent="261" name="categories">
       <ObjectId>16455</ObjectId>
       <StateNumber>756</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="267" parent="261" name="crediting">
+    <table id="268" parent="261" name="crediting">
       <ObjectId>16503</ObjectId>
       <StateNumber>759</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="261" name="di_applications">
+    <table id="269" parent="261" name="di_applications">
       <ObjectId>16540</ObjectId>
       <StateNumber>762</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="269" parent="261" name="di_successful">
+    <table id="270" parent="261" name="di_successful">
       <ObjectId>16528</ObjectId>
       <StateNumber>761</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="270" parent="261" name="mnp_applications">
+    <table id="271" parent="261" name="mnp_applications">
       <ObjectId>16576</ObjectId>
       <StateNumber>765</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="271" parent="261" name="mnp_successful">
+    <table id="272" parent="261" name="mnp_successful">
       <ObjectId>16565</ObjectId>
       <StateNumber>764</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="272" parent="261" name="stores">
+    <table id="273" parent="261" name="stores">
       <ObjectId>16409</ObjectId>
       <StateNumber>752</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="273" parent="261" name="targets">
+    <table id="274" parent="261" name="targets">
       <ObjectId>17467</ObjectId>
       <StateNumber>1962</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="274" parent="261" name="teko">
+    <table id="275" parent="261" name="teko">
       <ObjectId>16442</ObjectId>
       <StateNumber>754</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="275" parent="261" name="teko_categories">
+    <table id="276" parent="261" name="teko_categories">
       <ObjectId>16464</ObjectId>
       <StateNumber>756</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="276" parent="261" name="traffics">
+    <table id="277" parent="261" name="traffics">
       <ObjectId>19058</ObjectId>
       <StateNumber>1880</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="277" parent="261" name="vmr">
+    <table id="278" parent="261" name="vmr">
       <ObjectId>16681</ObjectId>
       <StateNumber>807</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <view id="278" parent="261" name="my_view">
+    <view id="279" parent="261" name="my_view">
       <ObjectId>18404</ObjectId>
       <SourceTextLength>2086</SourceTextLength>
       <StateNumber>1569</StateNumber>
       <OwnerName>postgres</OwnerName>
     </view>
-    <check id="279" parent="263" name="sum_first_pay">
+    <check id="280" parent="263" name="sum_first_pay">
       <ColNames>first_pay</ColNames>
       <ObjectId>17339</ObjectId>
       <Predicate>(first_pay &gt;= (0)::numeric) AND (first_pay &lt;= (100000)::numeric)</Predicate>
       <StateNumber>1093</StateNumber>
     </check>
-    <column id="280" parent="263" name="number">
+    <column id="281" parent="263" name="number">
       <DasType>char(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1518</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="281" parent="263" name="activation_date">
+    <column id="282" parent="263" name="activation_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="282" parent="263" name="activations_id">
+    <column id="283" parent="263" name="activations_id">
       <DasType>char(21)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="283" parent="263" name="tariff">
+    <column id="284" parent="263" name="tariff">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="263" name="posid">
+    <column id="285" parent="263" name="posid">
       <DasType>integer|0s</DasType>
       <Position>5</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="285" parent="263" name="segment">
+    <column id="286" parent="263" name="segment">
       <DasType>char(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="286" parent="263" name="first_pay">
+    <column id="287" parent="263" name="first_pay">
       <DasType>numeric|0s</DasType>
       <Position>7</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="287" parent="263" name="channel">
+    <column id="288" parent="263" name="channel">
       <DasType>varchar|0s</DasType>
       <Position>8</Position>
       <StateNumber>1093</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="288" parent="263" name="activations_posid_fkey">
+    <foreign-key id="289" parent="263" name="activations_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17346</ObjectId>
@@ -5003,7 +5009,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="289" parent="263" name="activations_pkey">
+    <index id="290" parent="263" name="activations_pkey">
       <ColNames>activations_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17342</ObjectId>
@@ -5015,21 +5021,21 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="290" parent="263" name="activations_pkey">
+    <key id="291" parent="263" name="activations_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17343</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1093</StateNumber>
       <UnderlyingIndexId>17342</UnderlyingIndexId>
     </key>
-    <column id="291" parent="264" name="activations_office_id">
+    <column id="292" parent="264" name="activations_office_id">
       <DasType>char(21)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2058</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <foreign-key id="292" parent="264" name="activations_office_activations_office_id_fkey">
+    <foreign-key id="293" parent="264" name="activations_office_activations_office_id_fkey">
       <ColNames>activations_office_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19417</ObjectId>
@@ -5037,7 +5043,7 @@ true posixrules
       <RefKeyColPositions>3</RefKeyColPositions>
       <RefTableId>17336</RefTableId>
     </foreign-key>
-    <index id="293" parent="264" name="activations_office_pkey">
+    <index id="294" parent="264" name="activations_office_pkey">
       <ColNames>activations_office_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19415</ObjectId>
@@ -5049,73 +5055,112 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="294" parent="264" name="activations_office_pkey">
+    <key id="295" parent="264" name="activations_office_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19416</ObjectId>
       <Primary>1</Primary>
       <StateNumber>2058</StateNumber>
       <UnderlyingIndexId>19415</UnderlyingIndexId>
     </key>
-    <check id="295" parent="265" name="number_symbols">
+    <column id="296" parent="265" name="employee">
+      <DasType>char(100)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>2078</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="297" parent="265" name="activations_id">
+      <DasType>char(21)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>2078</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <foreign-key id="298" parent="265" name="activations_sellers_activations_id_fkey">
+      <ColNames>activations_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19454</ObjectId>
+      <StateNumber>2078</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>17336</RefTableId>
+    </foreign-key>
+    <index id="299" parent="265" name="activations_sellers_activations_id_key">
+      <ColNames>activations_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19452</ObjectId>
+      <StateNumber>2078</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="300" parent="265" name="activations_sellers_activations_id_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19453</ObjectId>
+      <StateNumber>2078</StateNumber>
+      <UnderlyingIndexId>19452</UnderlyingIndexId>
+    </key>
+    <check id="301" parent="266" name="number_symbols">
       <ColNames>number</ColNames>
       <ObjectId>17186</ObjectId>
       <Predicate>number ~ &apos;^7\d+$&apos;::text</Predicate>
       <StateNumber>1034</StateNumber>
     </check>
-    <column id="296" parent="265" name="number">
+    <column id="302" parent="266" name="number">
       <DasType>char(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="297" parent="265" name="datesale">
+    <column id="303" parent="266" name="datesale">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="298" parent="265" name="activations_id">
+    <column id="304" parent="266" name="activations_id">
       <DasType>char(21)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="299" parent="265" name="tariff">
+    <column id="305" parent="266" name="tariff">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="300" parent="265" name="posid">
+    <column id="306" parent="266" name="posid">
       <DasType>integer|0s</DasType>
       <Position>5</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="301" parent="265" name="segment">
+    <column id="307" parent="266" name="segment">
       <DasType>char(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="302" parent="265" name="first_pay">
+    <column id="308" parent="266" name="first_pay">
       <DasType>integer|0s</DasType>
       <Position>7</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="303" parent="265" name="channel">
+    <column id="309" parent="266" name="channel">
       <DasType>varchar|0s</DasType>
       <Position>8</Position>
       <StateNumber>1034</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="304" parent="265" name="activationss_posid_fkey">
+    <foreign-key id="310" parent="266" name="activationss_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17193</ObjectId>
@@ -5123,7 +5168,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="305" parent="265" name="activationss_number_key">
+    <index id="311" parent="266" name="activationss_number_key">
       <ColNames>number</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17191</ObjectId>
@@ -5134,7 +5179,7 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="306" parent="265" name="activationss_pkey">
+    <index id="312" parent="266" name="activationss_pkey">
       <ColNames>activations_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17189</ObjectId>
@@ -5146,20 +5191,20 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="307" parent="265" name="activationss_pkey">
+    <key id="313" parent="266" name="activationss_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17190</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1034</StateNumber>
       <UnderlyingIndexId>17189</UnderlyingIndexId>
     </key>
-    <key id="308" parent="265" name="activationss_number_key">
+    <key id="314" parent="266" name="activationss_number_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17192</ObjectId>
       <StateNumber>1034</StateNumber>
       <UnderlyingIndexId>17191</UnderlyingIndexId>
     </key>
-    <column id="309" parent="266" name="category_id">
+    <column id="315" parent="267" name="category_id">
       <DasType>integer|0s</DasType>
       <IdentityKind>always</IdentityKind>
       <NotNull>1</NotNull>
@@ -5168,14 +5213,14 @@ true posixrules
       <SequenceId>16454</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="310" parent="266" name="name">
+    <column id="316" parent="267" name="name">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>755</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <index id="311" parent="266" name="categories_pkey">
+    <index id="317" parent="267" name="categories_pkey">
       <ColNames>category_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16460</ObjectId>
@@ -5184,7 +5229,7 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="312" parent="266" name="categories_name_key">
+    <index id="318" parent="267" name="categories_name_key">
       <ColNames>name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16462</ObjectId>
@@ -5195,102 +5240,102 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="313" parent="266" name="categories_pkey">
+    <key id="319" parent="267" name="categories_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16461</ObjectId>
       <Primary>1</Primary>
       <StateNumber>755</StateNumber>
       <UnderlyingIndexId>16460</UnderlyingIndexId>
     </key>
-    <key id="314" parent="266" name="categories_name_key">
+    <key id="320" parent="267" name="categories_name_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16463</ObjectId>
       <StateNumber>755</StateNumber>
       <UnderlyingIndexId>16462</UnderlyingIndexId>
     </key>
-    <column id="315" parent="267" name="crediting_id">
+    <column id="321" parent="268" name="crediting_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>759</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="316" parent="267" name="posid">
+    <column id="322" parent="268" name="posid">
       <DasType>integer|0s</DasType>
       <Position>2</Position>
       <StateNumber>759</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="317" parent="267" name="login">
+    <column id="323" parent="268" name="login">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="318" parent="267" name="name_client">
+    <column id="324" parent="268" name="name_client">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="319" parent="267" name="sum_sale">
+    <column id="325" parent="268" name="sum_sale">
       <DasType>numeric|0s</DasType>
       <Position>5</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="320" parent="267" name="sum_credit">
+    <column id="326" parent="268" name="sum_credit">
       <DasType>numeric|0s</DasType>
       <Position>6</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="321" parent="267" name="date_credit">
+    <column id="327" parent="268" name="date_credit">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="322" parent="267" name="bank">
+    <column id="328" parent="268" name="bank">
       <DasType>varchar|0s</DasType>
       <Position>8</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="323" parent="267" name="status">
+    <column id="329" parent="268" name="status">
       <DasType>varchar|0s</DasType>
       <Position>9</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="324" parent="267" name="approved">
+    <column id="330" parent="268" name="approved">
       <DasType>varchar|0s</DasType>
       <Position>10</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="325" parent="267" name="bank_details">
+    <column id="331" parent="268" name="bank_details">
       <DasType>varchar|0s</DasType>
       <Position>11</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="326" parent="267" name="percent">
+    <column id="332" parent="268" name="percent">
       <DasType>numeric|0s</DasType>
       <Position>12</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="327" parent="267" name="application_type">
+    <column id="333" parent="268" name="application_type">
       <DasType>varchar|0s</DasType>
       <Position>13</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="328" parent="267" name="crediting_posid_fkey">
+    <foreign-key id="334" parent="268" name="crediting_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16510</ObjectId>
@@ -5298,7 +5343,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="329" parent="267" name="crediting_pkey">
+    <index id="335" parent="268" name="crediting_pkey">
       <ColNames>crediting_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16508</ObjectId>
@@ -5307,66 +5352,66 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="330" parent="267" name="crediting_pkey">
+    <key id="336" parent="268" name="crediting_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16509</ObjectId>
       <Primary>1</Primary>
       <StateNumber>759</StateNumber>
       <UnderlyingIndexId>16508</UnderlyingIndexId>
     </key>
-    <column id="331" parent="268" name="date_activation">
+    <column id="337" parent="269" name="date_activation">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1214</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="332" parent="268" name="orderid">
+    <column id="338" parent="269" name="orderid">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="333" parent="268" name="posid">
+    <column id="339" parent="269" name="posid">
       <DasType>integer|0s</DasType>
       <Position>3</Position>
       <StateNumber>762</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="334" parent="268" name="number">
+    <column id="340" parent="269" name="number">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="335" parent="268" name="status">
+    <column id="341" parent="269" name="status">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="336" parent="268" name="reason">
+    <column id="342" parent="269" name="reason">
       <DasType>varchar|0s</DasType>
       <Position>6</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="337" parent="268" name="comment">
+    <column id="343" parent="269" name="comment">
       <DasType>varchar|0s</DasType>
       <Position>7</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="338" parent="268" name="date_status">
+    <column id="344" parent="269" name="date_status">
       <DasType>date|0s</DasType>
       <Position>8</Position>
       <StateNumber>762</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <foreign-key id="339" parent="268" name="di_applications_posid_fkey">
+    <foreign-key id="345" parent="269" name="di_applications_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16547</ObjectId>
@@ -5374,7 +5419,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="340" parent="268" name="di_applications_pkey">
+    <index id="346" parent="269" name="di_applications_pkey">
       <ColNames>orderid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16545</ObjectId>
@@ -5386,54 +5431,54 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="341" parent="268" name="di_applications_pkey">
+    <key id="347" parent="269" name="di_applications_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16546</ObjectId>
       <Primary>1</Primary>
       <StateNumber>762</StateNumber>
       <UnderlyingIndexId>16545</UnderlyingIndexId>
     </key>
-    <column id="342" parent="269" name="datesale">
+    <column id="348" parent="270" name="datesale">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>761</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="343" parent="269" name="orderid">
+    <column id="349" parent="270" name="orderid">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>761</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="344" parent="269" name="posid">
+    <column id="350" parent="270" name="posid">
       <DasType>integer|0s</DasType>
       <Position>3</Position>
       <StateNumber>761</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="345" parent="269" name="number">
+    <column id="351" parent="270" name="number">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>761</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="346" parent="269" name="upsale">
+    <column id="352" parent="270" name="upsale">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>761</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="347" parent="269" name="date_activation">
+    <column id="353" parent="270" name="date_activation">
       <DasType>date|0s</DasType>
       <Position>6</Position>
       <StateNumber>761</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <foreign-key id="348" parent="269" name="di_successful_posid_fkey">
+    <foreign-key id="354" parent="270" name="di_successful_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16535</ObjectId>
@@ -5441,7 +5486,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="349" parent="269" name="di_successful_pkey">
+    <index id="355" parent="270" name="di_successful_pkey">
       <ColNames>orderid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16533</ObjectId>
@@ -5453,41 +5498,41 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="350" parent="269" name="di_successful_pkey">
+    <key id="356" parent="270" name="di_successful_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16534</ObjectId>
       <Primary>1</Primary>
       <StateNumber>761</StateNumber>
       <UnderlyingIndexId>16533</UnderlyingIndexId>
     </key>
-    <check id="351" parent="270" name="applications_positive_number">
+    <check id="357" parent="271" name="applications_positive_number">
       <ColNames>applications</ColNames>
       <ObjectId>16579</ObjectId>
       <Predicate>(applications &gt;= 0) AND (applications &lt; 70)</Predicate>
       <StateNumber>765</StateNumber>
     </check>
-    <column id="352" parent="270" name="posid">
+    <column id="358" parent="271" name="posid">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>765</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="353" parent="270" name="applications_date">
+    <column id="359" parent="271" name="applications_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>765</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="354" parent="270" name="applications">
+    <column id="360" parent="271" name="applications">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>765</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="355" parent="270" name="mnp_applications_posid_fkey">
+    <foreign-key id="361" parent="271" name="mnp_applications_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16582</ObjectId>
@@ -5495,7 +5540,7 @@ true posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="356" parent="270" name="mnp_applications_pkey">
+    <index id="362" parent="271" name="mnp_applications_pkey">
       <ColNames>applications_date
 posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -5505,41 +5550,41 @@ posid</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="357" parent="270" name="mnp_applications_pkey">
+    <key id="363" parent="271" name="mnp_applications_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16581</ObjectId>
       <Primary>1</Primary>
       <StateNumber>765</StateNumber>
       <UnderlyingIndexId>16580</UnderlyingIndexId>
     </key>
-    <check id="358" parent="271" name="portations_positive_number">
+    <check id="364" parent="272" name="portations_positive_number">
       <ColNames>portations</ColNames>
       <ObjectId>16568</ObjectId>
       <Predicate>(portations &gt;= 0) AND (portations &lt; 50)</Predicate>
       <StateNumber>764</StateNumber>
     </check>
-    <column id="359" parent="271" name="posid">
+    <column id="365" parent="272" name="posid">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>764</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="360" parent="271" name="mnp_date">
+    <column id="366" parent="272" name="mnp_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>764</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="361" parent="271" name="portations">
+    <column id="367" parent="272" name="portations">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>764</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="362" parent="271" name="mnp_successful_posid_fkey">
+    <foreign-key id="368" parent="272" name="mnp_successful_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16571</ObjectId>
@@ -5547,7 +5592,7 @@ posid</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="363" parent="271" name="mnp_successful_pkey">
+    <index id="369" parent="272" name="mnp_successful_pkey">
       <ColNames>mnp_date
 posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -5557,70 +5602,70 @@ posid</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="364" parent="271" name="mnp_successful_pkey">
+    <key id="370" parent="272" name="mnp_successful_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16570</ObjectId>
       <Primary>1</Primary>
       <StateNumber>764</StateNumber>
       <UnderlyingIndexId>16569</UnderlyingIndexId>
     </key>
-    <column id="365" parent="272" name="posid">
+    <column id="371" parent="273" name="posid">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>751</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="366" parent="272" name="address">
+    <column id="372" parent="273" name="address">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="367" parent="272" name="region">
+    <column id="373" parent="273" name="region">
       <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="368" parent="272" name="rent">
+    <column id="374" parent="273" name="rent">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>751</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="369" parent="272" name="format">
+    <column id="375" parent="273" name="format">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="370" parent="272" name="supervisor">
+    <column id="376" parent="273" name="supervisor">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="371" parent="272" name="coffee">
+    <column id="377" parent="273" name="coffee">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="372" parent="272" name="status">
+    <column id="378" parent="273" name="status">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
       <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="373" parent="272" name="stores_pkey">
+    <index id="379" parent="273" name="stores_pkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16412</ObjectId>
@@ -5629,7 +5674,7 @@ posid</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="374" parent="272" name="stores_address_key">
+    <index id="380" parent="273" name="stores_address_key">
       <ColNames>address</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16414</ObjectId>
@@ -5640,95 +5685,95 @@ posid</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="375" parent="272" name="stores_pkey">
+    <key id="381" parent="273" name="stores_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16413</ObjectId>
       <Primary>1</Primary>
       <StateNumber>751</StateNumber>
       <UnderlyingIndexId>16412</UnderlyingIndexId>
     </key>
-    <key id="376" parent="272" name="stores_address_key">
+    <key id="382" parent="273" name="stores_address_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16415</ObjectId>
       <StateNumber>751</StateNumber>
       <UnderlyingIndexId>16414</UnderlyingIndexId>
     </key>
-    <check id="377" parent="273" name="valid_rtk_targets">
+    <check id="383" parent="274" name="valid_rtk_targets">
       <ColNames>rtk_cr</ColNames>
       <ObjectId>17472</ObjectId>
       <Predicate>rtk_cr &lt;= (1)::numeric</Predicate>
       <StateNumber>1169</StateNumber>
     </check>
-    <check id="378" parent="273" name="valid_vmr_targets">
+    <check id="384" parent="274" name="valid_vmr_targets">
       <ColNames>vmr</ColNames>
       <ObjectId>17471</ObjectId>
       <Predicate>vmr &lt;= (1)::numeric</Predicate>
       <StateNumber>1169</StateNumber>
     </check>
-    <column id="379" parent="273" name="target_id">
+    <column id="385" parent="274" name="target_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="380" parent="273" name="posid">
+    <column id="386" parent="274" name="posid">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="381" parent="273" name="gi">
+    <column id="387" parent="274" name="gi">
       <DasType>numeric|0s</DasType>
       <Position>3</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="382" parent="273" name="focus_tariff">
+    <column id="388" parent="274" name="focus_tariff">
       <DasType>numeric|0s</DasType>
       <Position>4</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="383" parent="273" name="mnp">
+    <column id="389" parent="274" name="mnp">
       <DasType>numeric|0s</DasType>
       <Position>5</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="384" parent="273" name="rtk">
+    <column id="390" parent="274" name="rtk">
       <DasType>numeric|0s</DasType>
       <Position>6</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="385" parent="273" name="rtk_lid">
+    <column id="391" parent="274" name="rtk_lid">
       <DasType>numeric|0s</DasType>
       <Position>7</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="386" parent="273" name="rtk_cr">
+    <column id="392" parent="274" name="rtk_cr">
       <DasType>numeric|0s</DasType>
       <Position>8</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="387" parent="273" name="vmr">
+    <column id="393" parent="274" name="vmr">
       <DasType>numeric|0s</DasType>
       <Position>9</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="388" parent="273" name="reporting_period">
+    <column id="394" parent="274" name="reporting_period">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StateNumber>1169</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <foreign-key id="389" parent="273" name="targets_posid_fkey">
+    <foreign-key id="395" parent="274" name="targets_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17477</ObjectId>
@@ -5736,7 +5781,7 @@ posid</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="390" parent="273" name="targets_pkey">
+    <index id="396" parent="274" name="targets_pkey">
       <ColNames>target_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17475</ObjectId>
@@ -5745,54 +5790,54 @@ posid</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="391" parent="273" name="targets_pkey">
+    <key id="397" parent="274" name="targets_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>17476</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1169</StateNumber>
       <UnderlyingIndexId>17475</UnderlyingIndexId>
     </key>
-    <column id="392" parent="274" name="datesale">
+    <column id="398" parent="275" name="datesale">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>754</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="393" parent="274" name="teko_id">
+    <column id="399" parent="275" name="teko_id">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>754</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="394" parent="274" name="product">
+    <column id="400" parent="275" name="product">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>754</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="395" parent="274" name="product_name">
+    <column id="401" parent="275" name="product_name">
       <DasType>varchar|0s</DasType>
       <Position>4</Position>
       <StateNumber>754</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="396" parent="274" name="posid">
+    <column id="402" parent="275" name="posid">
       <DasType>integer|0s</DasType>
       <Position>5</Position>
       <StateNumber>754</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="397" parent="274" name="sumsale">
+    <column id="403" parent="275" name="sumsale">
       <DasType>numeric|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>917</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="398" parent="274" name="teko_posid_fkey">
+    <foreign-key id="404" parent="275" name="teko_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16449</ObjectId>
@@ -5800,7 +5845,7 @@ posid</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="399" parent="274" name="teko_pkey">
+    <index id="405" parent="275" name="teko_pkey">
       <ColNames>teko_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16447</ObjectId>
@@ -5812,28 +5857,28 @@ posid</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="400" parent="274" name="teko_pkey">
+    <key id="406" parent="275" name="teko_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16448</ObjectId>
       <Primary>1</Primary>
       <StateNumber>754</StateNumber>
       <UnderlyingIndexId>16447</UnderlyingIndexId>
     </key>
-    <column id="401" parent="275" name="teko_id">
+    <column id="407" parent="276" name="teko_id">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>756</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="402" parent="275" name="category_id">
+    <column id="408" parent="276" name="category_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>756</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="403" parent="275" name="teko_categories_teko_id_fkey">
+    <foreign-key id="409" parent="276" name="teko_categories_teko_id_fkey">
       <ColNames>teko_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16469</ObjectId>
@@ -5841,7 +5886,7 @@ posid</ColNames>
       <RefKeyColPositions>2</RefKeyColPositions>
       <RefTableId>16442</RefTableId>
     </foreign-key>
-    <foreign-key id="404" parent="275" name="teko_categories_category_id_fkey">
+    <foreign-key id="410" parent="276" name="teko_categories_category_id_fkey">
       <ColNames>category_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16474</ObjectId>
@@ -5849,7 +5894,7 @@ posid</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16455</RefTableId>
     </foreign-key>
-    <index id="405" parent="275" name="teko_categories_pkey">
+    <index id="411" parent="276" name="teko_categories_pkey">
       <ColNames>teko_id
 category_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -5862,40 +5907,40 @@ category_id</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="406" parent="275" name="teko_categories_pkey">
+    <key id="412" parent="276" name="teko_categories_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16468</ObjectId>
       <Primary>1</Primary>
       <StateNumber>756</StateNumber>
       <UnderlyingIndexId>16467</UnderlyingIndexId>
     </key>
-    <check id="407" parent="276" name="positive_traffic">
+    <check id="413" parent="277" name="positive_traffic">
       <ColNames>traffic</ColNames>
       <ObjectId>19061</ObjectId>
       <Predicate>(traffic &gt;= (0)::numeric) AND (traffic &lt; (10000)::numeric)</Predicate>
       <StateNumber>1880</StateNumber>
     </check>
-    <column id="408" parent="276" name="posid">
+    <column id="414" parent="277" name="posid">
       <DasType>integer|0s</DasType>
       <Position>1</Position>
       <StateNumber>1880</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="409" parent="276" name="traffic_date">
+    <column id="415" parent="277" name="traffic_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1880</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="410" parent="276" name="traffic">
+    <column id="416" parent="277" name="traffic">
       <DasType>numeric|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1880</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="411" parent="276" name="traffics_posid_fkey">
+    <foreign-key id="417" parent="277" name="traffics_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19066</ObjectId>
@@ -5903,7 +5948,7 @@ category_id</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="412" parent="276" name="traffics_posid_traffic_date_key">
+    <index id="418" parent="277" name="traffics_posid_traffic_date_key">
       <ColNames>posid
 traffic_date</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -5912,84 +5957,84 @@ traffic_date</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="413" parent="276" name="traffics_posid_traffic_date_key">
+    <key id="419" parent="277" name="traffics_posid_traffic_date_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19065</ObjectId>
       <StateNumber>1880</StateNumber>
       <UnderlyingIndexId>19064</UnderlyingIndexId>
     </key>
-    <column id="414" parent="277" name="posid">
+    <column id="420" parent="278" name="posid">
       <DasType>integer|0s</DasType>
       <Position>1</Position>
       <StateNumber>807</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="415" parent="277" name="date_report">
+    <column id="421" parent="278" name="date_report">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="416" parent="277" name="login">
+    <column id="422" parent="278" name="login">
       <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="417" parent="277" name="request">
+    <column id="423" parent="278" name="request">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="418" parent="277" name="date_visit">
+    <column id="424" parent="278" name="date_visit">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="419" parent="277" name="core_request">
+    <column id="425" parent="278" name="core_request">
       <DasType>numeric|0s</DasType>
       <Position>6</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="420" parent="277" name="upsale">
+    <column id="426" parent="278" name="upsale">
       <DasType>numeric|0s</DasType>
       <Position>7</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="421" parent="277" name="rtk">
+    <column id="427" parent="278" name="rtk">
       <DasType>numeric|0s</DasType>
       <Position>8</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="422" parent="277" name="pay">
+    <column id="428" parent="278" name="pay">
       <DasType>varchar|0s</DasType>
       <Position>9</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="423" parent="277" name="total">
+    <column id="429" parent="278" name="total">
       <DasType>numeric|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="424" parent="277" name="vmr_id">
+    <column id="430" parent="278" name="vmr_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StateNumber>807</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="425" parent="277" name="vmr_posid_fkey">
+    <foreign-key id="431" parent="278" name="vmr_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16688</ObjectId>
@@ -5997,7 +6042,7 @@ traffic_date</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="426" parent="277" name="vmr_pkey">
+    <index id="432" parent="278" name="vmr_pkey">
       <ColNames>vmr_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16686</ObjectId>
@@ -6006,29 +6051,29 @@ traffic_date</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="427" parent="277" name="vmr_pkey">
+    <key id="433" parent="278" name="vmr_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16687</ObjectId>
       <Primary>1</Primary>
       <StateNumber>807</StateNumber>
       <UnderlyingIndexId>16686</UnderlyingIndexId>
     </key>
-    <column id="428" parent="278" name="Супервайзер">
+    <column id="434" parent="279" name="Супервайзер">
       <DasType>varchar(50)|0s</DasType>
       <Position>1</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="429" parent="278" name="План ДИТ, шт">
+    <column id="435" parent="279" name="План ДИТ, шт">
       <DasType>numeric|0s</DasType>
       <Position>2</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="430" parent="278" name="Факт ДИТ, шт">
+    <column id="436" parent="279" name="Факт ДИТ, шт">
       <DasType>bigint|0s</DasType>
       <Position>3</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="431" parent="278" name="Прогноз ДИТ">
+    <column id="437" parent="279" name="Прогноз ДИТ">
       <DasType>numeric|0s</DasType>
       <Position>4</Position>
       <StateNumber>1569</StateNumber>
