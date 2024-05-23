@@ -75,7 +75,8 @@ TABLES_LIST_DB: dict[str] = {
                         ],
                         'columns_name_db': [
                             'activations_office_id'
-                        ]
+                        ],
+                        'table_id': []
                     },
                     'stores': {
                         'column_int': [
