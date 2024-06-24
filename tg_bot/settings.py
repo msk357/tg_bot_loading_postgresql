@@ -375,6 +375,9 @@ TABLES_LIST_DB: dict[str] = {
                         ],
                         'table_id': [
                             'vmr_id'
+                        ],
+                        'empty_lines': [
+                            'Логин продавца (Текст)'
                         ]
                     },  # ok
                     'traffics': {
