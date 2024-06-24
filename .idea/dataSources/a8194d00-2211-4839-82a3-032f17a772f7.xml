@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="postgres@51.250.23.244">
+<dataSource name="postgres@51.250.23.244 [2]">
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>13761||-9223372036854775808|c|G
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+13760||-9223372036854775808|c|G
+13760||10|c|G
+13760||10|C|G
+13760||10|T|G
+13761||-9223372036854775808|c|G
 13761||10|c|G
 13761||19768|c|G
 13761||10|C|G
 13761||-9223372036854775808|T|G
 13761||10|T|G</Grants>
-      <IntrospectionStateNumber>2263</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2253</IntrospectionStateNumber>
       <ServerVersion>14.12</ServerVersion>
       <StartupTime>1717138635</StartupTime>
       <TimeZones>true ACDT
@@ -1408,19 +1416,18 @@ true posixrules
 13395||10|C|G
 13395||-9223372036854775808|U|G
 13395||10|U|G</Grants>
-      <IntrospectionStateNumber>2263</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2253</IntrospectionStateNumber>
       <ObjectId>13761</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="3" parent="1" name="daniildzheparov">
-      <CanLogin>1</CanLogin>
-      <ObjectId>19768</ObjectId>
-    </role>
-    <role id="4" parent="1" name="pg_database_owner">
+    <role id="3" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="4" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
     </role>
     <role id="6" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
@@ -1428,31 +1435,28 @@ true posixrules
 3375
 3377</RoleGrants>
     </role>
-    <role id="7" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_read_all_settings">
+    <role id="7" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_read_all_stats">
+    <role id="8" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <role id="10" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="12" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_write_server_files">
+    <role id="11" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="15" parent="1" name="postgres">
+    <role id="12" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="14" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -1460,6 +1464,10 @@ true posixrules
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
+    </role>
+    <role id="15" parent="1" name="daniildzheparov">
+      <CanLogin>1</CanLogin>
+      <ObjectId>19768</ObjectId>
     </role>
     <tablespace id="16" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
@@ -4973,8 +4981,8 @@ true posixrules
 19449||10|t|G
 19449||10|D|G
 19449||10|w|G</Grants>
-      <IntrospectionStateNumber>2263</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-06-24.14:22:06</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>2253</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-06-24.13:39:24</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>2250</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -6161,21 +6169,27 @@ traffic_date</ColNames>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="429" parent="279" name="total">
+    <column id="429" parent="279" name="pay">
+      <DasType>varchar|0s</DasType>
+      <Position>9</Position>
+      <StateNumber>807</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="430" parent="279" name="total">
       <DasType>numeric|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StateNumber>807</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="430" parent="279" name="vmr_id">
+    <column id="431" parent="279" name="vmr_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StateNumber>807</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="431" parent="279" name="vmr_posid_fkey">
+    <foreign-key id="432" parent="279" name="vmr_posid_fkey">
       <ColNames>posid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16688</ObjectId>
@@ -6183,7 +6197,7 @@ traffic_date</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16409</RefTableId>
     </foreign-key>
-    <index id="432" parent="279" name="vmr_pkey">
+    <index id="433" parent="279" name="vmr_pkey">
       <ColNames>vmr_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16686</ObjectId>
@@ -6192,29 +6206,29 @@ traffic_date</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="433" parent="279" name="vmr_pkey">
+    <key id="434" parent="279" name="vmr_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16687</ObjectId>
       <Primary>1</Primary>
       <StateNumber>807</StateNumber>
       <UnderlyingIndexId>16686</UnderlyingIndexId>
     </key>
-    <column id="434" parent="280" name="Супервайзер">
+    <column id="435" parent="280" name="Супервайзер">
       <DasType>varchar(50)|0s</DasType>
       <Position>1</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="435" parent="280" name="План ДИТ, шт">
+    <column id="436" parent="280" name="План ДИТ, шт">
       <DasType>numeric|0s</DasType>
       <Position>2</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="436" parent="280" name="Факт ДИТ, шт">
+    <column id="437" parent="280" name="Факт ДИТ, шт">
       <DasType>bigint|0s</DasType>
       <Position>3</Position>
       <StateNumber>1569</StateNumber>
     </column>
-    <column id="437" parent="280" name="Прогноз ДИТ">
+    <column id="438" parent="280" name="Прогноз ДИТ">
       <DasType>numeric|0s</DasType>
       <Position>4</Position>
       <StateNumber>1569</StateNumber>
