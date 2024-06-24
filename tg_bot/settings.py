@@ -13,17 +13,17 @@ env_path = '../infra_project/.env'
 load_dotenv(dotenv_path=env_path)
 
 # токен для ТГ-бота
-TOKEN = "your_token"
+TOKEN = "7098729439:AAHlzYAG0tAmoKgmp19aly66IsCojWpPhpo"
 
 # переменные для подключения к DB
-DATABASE = "your_db_name"
-PASSWORD = "your_password"
-USER_DB = "your_db_user_name"
-HOST = "your_host"
-PORT = "your_port"
+DATABASE = "postgres"
+PASSWORD = "2367"
+USER_DB = "postgres"
+HOST = "51.250.23.244"
+PORT = "5432"
 
 # путь к файлу CSV
-PATH_DIRECTORY = "your_directiory"
+PATH_DIRECTORY = "/tg_bot_loading_postgresql_docker/csv/"
 
 
 """
