@@ -78,7 +78,7 @@
       <recent name="$PROJECT_DIR$/infra" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.console.sql">
+  <component name="RunManager">
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/8730a1db-5d77-427a-bc39-c27624ac78d7/console.sql" />
       <script-mode>FILE</script-mode>
@@ -153,7 +153,7 @@
       <workItem from="1718891040016" duration="965000" />
       <workItem from="1718892025439" duration="18000" />
       <workItem from="1718892972969" duration="1112000" />
-      <workItem from="1719231660591" duration="2290000" />
+      <workItem from="1719231660591" duration="3053000" />
     </task>
     <servers />
   </component>
