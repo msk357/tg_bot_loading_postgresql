@@ -92,10 +92,11 @@ def converts_columns_separations(df, table_context: dict[str]):
 
 
 def del_empty_lines(df, table_context: dict[str]):
+    pattern = r'(?<=\D)(?=[^a-zA-Z_])'
     for i in range(len(table_context['empty_lines'])):
         df[table_context['empty_lines'][i]] = (
             df[table_context['empty_lines'][i]].map(
-                lambda x: str(x).split(' ')[0]
+                lambda x: re.split(pattern, str(x))[0]
             )
         )  # сохраняем данные до пробела
     return df
