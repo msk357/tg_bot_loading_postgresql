@@ -11,6 +11,7 @@ env_path = '/tg_bot_loading_postgresql_docker/infra_project/.env'
 load_dotenv(dotenv_path=env_path)
 
 # токен для ТГ-бота
+
 TOKEN = os.getenv("TOKEN")
 
 # переменные для подключения к DB
@@ -19,6 +20,7 @@ PASSWORD = os.getenv("PASSWORD")
 USER_DB = os.getenv("USER_DB")
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
+
 
 # путь к файлу CSV
 PATH_DIRECTORY = os.getenv("PATH_DIRECTORY")
@@ -38,47 +40,6 @@ address_id - название PK в обновляемой таблице DB т�
 """
 
 TABLES_LIST_DB: dict[str] = {
-                    'services': {
-                        'column_date': [
-                            'Время'
-                        ],
-                        'column_int': [
-                            'Сумма в валюте получения',
-                            'POSID'
-                        ],
-                        'columns_name_csv': [
-                            'Время',
-                            'Global Id',
-                            'Товар',
-                            'Наименование номенклатуры',
-                            'POSID',
-                            'Сумма в валюте получения'
-                        ],
-                        'columns_name_db': [
-                            'datesale_teko',
-                            'service_id',
-                            'product',
-                            'product_name',
-                            'posid',
-                            'sumsale_service'
-                        ],
-                        'table_id': [
-                            'teko_id'
-                        ]
-                    },  # ok
-                    'activations_sellers': {
-                        'columns_name_csv': [
-                            'employee',
-                            'activations_id'
-                        ],
-                        'columns_name_db': [
-                            'employee',
-                            'activations_id'
-                        ],
-                        'table_id': [
-                            'activations_id'
-                        ]
-                    },
                     'activations_office': {
                         'columns_name_csv': [
                             'ICC'
@@ -285,55 +246,6 @@ TABLES_LIST_DB: dict[str] = {
                             'orderid'
                         ]
                     },  # ok
-                    'credits': {
-                        'column_date': [
-                            'Время отправки заявки на рассмотрение'
-                        ],
-                        'column_int': [
-                            'PosId ТТ'
-                        ],
-                        'percent_to_int': [
-                            'Процентная ставка',
-                            'Сумма товара',
-                            'Сумма кредита'
-                        ],
-                        'columns_name_csv': [
-                            'Номер заявки',
-                            'PosId ТТ',
-                            'ФИО продавца',
-                            'ФИО клиента',
-                            'Сумма товара',
-                            'Сумма кредита',
-                            'Время отправки заявки на рассмотрение',
-                            'Банк',
-                            'Окончательный статус заявки',
-                            'Одобрения по любому банку',
-                            'Акции по всем банкам',
-                            'Процентная ставка',
-                            'Тип оформления заявки'
-                        ],
-                        'columns_name_db': [
-                            'credit_id',
-                            'posid',
-                            'login',
-                            'name_client',
-                            'sum_sale',
-                            'sum_credit',
-                            'date_credit',
-                            'bank',
-                            'status',
-                            'approved',
-                            'bank_details',
-                            'percent',
-                            'application_type'
-                        ],
-                        'table_id': [
-                            'crediting_id'
-                        ],
-                        'separations': [
-                            'Акции по всем банкам'
-                        ]
-                    },  # ok
                     'vmr': {
                         'column_date': [
                             'date_report',
@@ -380,6 +292,29 @@ TABLES_LIST_DB: dict[str] = {
                             'Логин продавца (Текст)'
                         ]
                     },  # ok
+                    'authorizations_webdealer': {
+                        'column_date': [
+                            'Дата'
+                        ],
+                        'column_int': [
+                            'Точка продаж',
+                            'MSISDN'
+                        ],
+                        'columns_name_csv': [
+                            'Точка продаж',
+                            'MSISDN',
+                            'Дата',
+                            'Пользователь'
+                        ],
+                        'columns_name_db': [
+                            'posid',
+                            'number',
+                            'authorization_date',
+                            'employee'
+                        ],
+                        'table_id': [
+                        ]
+                    },  # ok
                     'traffics': {
                         'column_date': [
                             'DATE'
@@ -401,151 +336,61 @@ TABLES_LIST_DB: dict[str] = {
                             'posid'
                         ]
                     },  # ok
-                    'mnp_successfuls': {
-                        'column_date': [
-                            'DATE'
-                        ],
-                        'column_int': [
-                            'Код ТТ',
-                            'VALUE'
-                        ],
-                        'columns_name_csv': [
-                            'Код ТТ',
-                            'DATE',
-                            'VALUE'
-                        ],
-                        'columns_name_db': [
-                            'posid',
-                            'mnp_date',
-                            'portations'
-                        ],
-                        'table_id': [
-                            'mnp_date'
-                        ]
-                    },  # ok
-                    'mnp_applications': {
-                        'column_date': [
-                            'DATE'
-                        ],
-                        'column_int': [
-                            'Код ТТ',
-                            'VALUE'
-                        ],
-                        'columns_name_csv': [
-                            'Код ТТ',
-                            'DATE',
-                            'VALUE'
-                        ],
-                        'columns_name_db': [
-                            'posid',
-                            'applications_date',
-                            'applications'
-                        ],
-                        'table_id': [
-                            'applications_date'
-                        ]
-                    },  # ok
-                    'photo_reports': {
-                        'column_date': [
-                            'date_report'
-                        ],
-                        'percent_to_int': [
-                            'result'
-                        ],
-                        'columns_name_csv': [
-                            'report_id',
-                            'posid',
-                            'result',
-                            'date_report'
-                        ],
-                        'columns_name_db': [
-                            'report_id',
-                            'posid',
-                            'result',
-                            'date_report'
-                        ],
-                        'table_id': [
-                            'report_id'
-                        ]
-                    },  # ok
-                    'service_errors': {
-                        'column_date': [
-                            'date_report'
-                        ],
-                        'column_int': [
-                        ],
-                        'columns_name_csv': [
-                            'posid',
-                            'result',
-                            'date_report',
-                            'errors_id'
-                        ],
-                        'columns_name_db': [
-                            'posid',
-                            'result',
-                            'date_report',
-                            'errors_id'
-                        ],
-                        'table_id': [
-                            'errors_id'
-                        ]
-                    },  # ok
                     'smartphones': {
                         'column_date': [
-                            'Номер чека'
+                            'Чек ККМ.Дата'
                         ],
                         'column_int': [
-                            'Сумма'
+                            'Характеристика',
+                            'Продавец.Персональный штрихкод',
+                            'Количество',
+                            'Сумма',
+                            'Сумма со скидкой'
                         ],
                         'columns_name_csv': [
-                            'Ссылка.Склад',
-                            'Номер чека',
+                            'POSID',
+                            'Чек ККМ.Дата',
+                            'Характеристика',
+                            'Продавец.Персональный штрихкод',
                             'Номенклатура',
-                            'IMEI',
-                            'Сумма'
-
+                            'Скидка наценка',
+                            'Количество',
+                            'Сумма',
+                            'Сумма со скидкой'
                         ],
                         'columns_name_db': [
-                            'address',
-                            'datesale',
-                            'model',
+                            'posid',
+                            'order_date',
                             'imei',
-                            'sumsale'
+                            'employee_id',
+                            'nomenclature',
+                            'promotion',
+                            'quantity',
+                            'order_amount',
+                            'order_amount_promotion'
                         ],
                         'table_id': [
                             'imei'
-                        ],
-                        'address_id': [
-                            'Ссылка.Склад'
                         ]
                     },  # ok
-                    'product_sales': {
+                    'employees': {
                         'column_date': [
-                            'Номер чека'
                         ],
                         'column_int': [
-                            'Сумма'
+                            'Персональный штрихкод'
                         ],
                         'columns_name_csv': [
-                            'Ссылка.Склад',
-                            'Номер чека',
-                            'Номенклатура',
-                            'Сумма'
-
+                            'Продавец',
+                            'Персональный штрихкод'
                         ],
                         'columns_name_db': [
-                            'address',
-                            'datesale',
-                            'model',
-                            'sumsale'
+                            'employee_fio',
+                            'employee_id'
                         ],
                         'table_id': [
-                            'imei'
+                            'employee_id'
                         ],
-                        'address_id': [
-                            'Ссылка.Склад'
-                        ]
-                    }
+                    },  # ok
 }
 
 CURRENT_PK_INT: list[int] = [
@@ -648,7 +493,7 @@ CURRENT_PK_INT: list[int] = [
     68454,
     79089,
     890462
-]  # список актульных PK формата int для проверки
+]  # список актуальных PK формата int для проверки
 CURRENT_PK_STR: list[str] = [
     'г.Москва, Щелковское шоссе, 75 (ТРЦ Щелковский) *Теле2*',
     'г.Москва, Измайловский вал,2 *Теле2*',
@@ -748,7 +593,7 @@ CURRENT_PK_STR: list[str] = [
     'Саргатское2 *Теле2* (ВИ)',
     'Калачинск1 *Теле2* (ВИ)',
     'Черлак4 *Теле2* (ВИ)'
-]  # список актульных PK формата str для проверки
+]  # список актуальных PK формата str для проверки
 COLUMNS_NAME_POSID_IN_CSV: list[str] = [
     'posid',
     'pos_id',
@@ -758,6 +603,7 @@ COLUMNS_NAME_POSID_IN_CSV: list[str] = [
     'Код ТТ',
     'Номер Локации',
     'POS_ID',
+    'Точка продаж',
     'POSID'
 ]  # название колонки с posid в csv
 CSV_CONVERSION_FROM_UNPIVOT: list[str] = [

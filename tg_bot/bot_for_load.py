@@ -78,7 +78,7 @@ def handle_file(update, context):
         file_name = os.path.join(f'{name_table_load}.csv')
 
         if name_table_load in TABLES_LIST_DB.keys() and file_name.endswith('.csv'):
-            # переназначем путь для file_name и сохраняем CSV по заданному пути
+            # переназначен путь для file_name и сохраняем CSV по заданному пути
             file_name = os.path.join(PATH_DIRECTORY, f'{name_table_load}.csv')
             file.download(file_name)
             context.bot.send_message(chat_id=update.effective_chat.id,

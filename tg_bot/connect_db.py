@@ -48,7 +48,7 @@ def load_csv_db(path_directory: str, name_table_db: str) -> None:
         cur.copy_from(f, f'{name_temp_table}', sep=';', null='NULL')
 
     # Ветвление для загрузки данных в таблицах без PK
-    if name_table_db == 'traffics':
+    if name_table_db in ['traffics', 'authorizations_webdealer']:
         insert_unique_query: str = (f"INSERT INTO {name_table_db} ({columns_load_str}) "
                                     f"SELECT {columns_load_str} "
                                     f"FROM {name_temp_table} ")
