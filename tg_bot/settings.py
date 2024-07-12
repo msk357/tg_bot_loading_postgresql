@@ -137,7 +137,8 @@ TABLES_LIST_DB: dict[str] = {
                             'POS_ID',
                             'SEGMENT_NAME',
                             'FIRST_PAY',
-                            'METHOD_REG_SIM'
+                            'METHOD_REG_SIM',
+                            'employee_id'
                         ],
                         'columns_name_db': [
                             'number',
@@ -147,7 +148,8 @@ TABLES_LIST_DB: dict[str] = {
                             'posid',
                             'segment',
                             'first_pay',
-                            'channel'
+                            'channel',
+                            'employee_id'
                         ],
                         'table_id': [
                             'activations_id'
@@ -496,6 +498,7 @@ CURRENT_PK_INT: list[int] = [
     79089,
     890462,
     122832,
+    124111,
     125378
 ]  # список актуальных PK формата int для проверки
 CURRENT_PK_STR: list[str] = [
