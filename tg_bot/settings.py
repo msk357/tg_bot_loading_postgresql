@@ -104,7 +104,9 @@ TABLES_LIST_DB: dict[str] = {
                             'rtk_lid',
                             'rtk_cr',
                             'vmr',
-                            'reporting_period'
+                            'reporting_period',
+                            'promotional_sales',
+                            'smartphones'
                         ],
                         'columns_name_db': [
                             'target_id',
@@ -116,7 +118,9 @@ TABLES_LIST_DB: dict[str] = {
                             'rtk_lid',
                             'rtk_cr',
                             'vmr',
-                            'reporting_period'
+                            'reporting_period',
+                            'promotional_sales',
+                            'smartphones'
                         ],
                         'table_id': [
                             'target_id'

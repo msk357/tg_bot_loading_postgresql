@@ -8,13 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a962113-e62e-462a-8a88-c6dea50aee60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tg_bot/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0df72fc-c413-4337-a4ce-1f5785558ad7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/bot_for_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/bot_for_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/connect_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/connect_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg_bot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tg_bot/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +33,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2YlKyyxRXzk7AJyLTLBA686BVVS" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -191,6 +186,8 @@
       <workItem from="1719231660591" duration="5346000" />
       <workItem from="1719237103031" duration="40516000" />
       <workItem from="1719836668024" duration="16693000" />
+      <workItem from="1721065711278" duration="448000" />
+      <workItem from="1721066221625" duration="37834000" />
     </task>
     <servers />
   </component>
@@ -198,7 +195,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$new.coverage" NAME="new Coverage Results" MODIFIED="1719255775432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
+    <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$new.coverage" NAME="new Coverage Results" MODIFIED="1721656200792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Рабочие файлы/code" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$.coverage" NAME="туц Coverage Results" MODIFIED="1719256787079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$bot_for_load.coverage" NAME="bot_for_load Coverage Results" MODIFIED="1719836792372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
     <SUITE FILE_PATH="coverage/tg_bot_loading_postgresql$convert_csv.coverage" NAME="convert_csv Coverage Results" MODIFIED="1701193307378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tg_bot" />
